@@ -1,4 +1,4 @@
-# potluck-planner
+# Potluck-Planner-EndPoints
 
 ## Deployed at https://heroku-deploying-api.herokuapp.com/
 

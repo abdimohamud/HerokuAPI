@@ -1,6 +1,6 @@
 # potluck-planner
 
-## Deployed at https://the-potluck-planner.herokuapp.com/
+## Deployed at https://heroku-deploying-api.herokuapp.com/
 
 ## Routes Table
 

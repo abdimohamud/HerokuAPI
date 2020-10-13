@@ -1,0 +1,36 @@
+{
+  "name": "HerokuAPI",
+  "version": "1.0.0",
+  "description": "| Method | Endpoint            | Access | Description                   |\r | ------ | ------------------- | ------ | ----------------------------- |\r | POST   | `/user/register`    | all    | Register new User             |\r | POST   | `/user/login`       | all    | Login User                    |\r | GET    | `/event`            | token  | Get all Events                |\r | GET    | `/event/:id`        | token  | Get Event by id               |\r | POST   | `/event`            | token  | Add new Event                 |\r | PUT    | `/event/:id`        | token  | Edit existingEvent            |\r | DELETE | `/event/:id`        | token  | Remove Event                  |\r | GET    | `/menu/:id`         | token  | Get menu item by id           |\r | GET    | `/menu/event/:id`   | token  | Get all event menu items      |\r | POST   | `/menu`             | token  | Add a new menu item           |\r | PUT    | `/menu/:id`         | token  | Edit existing menu item by id |\r | DELETE | `/menu/:id`         | token  | Remove menu item              |\r | GET    | `/guest/:id`        | token  | Get guest by id               |\r | GET    | `/guest/user/email` | token  | Get guest by email            |\r | GET    | `/guest/event/:id`  | token  | Get all guests by event id    |\r | POST   | `/guest`            | token  | Add a new guest               |\r | PUT    | `/guest/:id`        | token  | Edit guest by id              |\r | DELETE | `/guest/:id`        | token  | Remove guest by id            |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdimohamud/HerokuAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdimohamud/HerokuAPI/issues"
+  },
+  "homepage": "https://github.com/abdimohamud/HerokuAPI#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.6",
+    "pg": "^8.4.1",
+    "sqlite3": "^5.0.0"
+  }
+}

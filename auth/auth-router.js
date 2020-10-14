@@ -40,7 +40,7 @@ router.post("/register", async (req,res,next) => {
 router.post('/login', (req, res) => {
     //Login user
     let { email, password } = req.body;
-        findBy({ email }).first()
+        findBy( email ).first()
         .then(user => {
             if (user && bcrypt.compareSync(password, user.password)) {
                 const token = generateToken(user);
@@ -66,6 +66,7 @@ function generateToken(user) {
     //Header payload and verify signature
     const payload = {
         email: user.email,
+        password:user.password
     };
     //Token expiration
     const options = {
